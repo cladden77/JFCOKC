@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+  Footer
+------------------------------------------------------------------------------*/
+
+.footer {
+  background: $primary;
+  padding: 40px;
+  color: $white;
+
+  &__logo {
+    max-width: rem(200);
+    padding-bottom: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .footer-nav {
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        a {
+          color: $white;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &--copywright {
+    background: darken($primary, 5%);
+  }
+}

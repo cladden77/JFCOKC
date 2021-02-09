@@ -1,0 +1,256 @@
+// Remodal
+.remodal {
+  max-width: 800px !important;
+  margin: 10vh auto !important;
+  position: relative;
+  padding: 0 !important;
+  width: 50vw;
+  border-radius: rem(5);
+  transition: all 0.3s ease;
+  transform: scale(0.9);
+  opacity: 0;
+  background: transparent;
+
+  &.remodal--video {
+    max-width: rem(1280);
+    max-height: unset;
+    margin: rem(30) auto !important;
+    width: 90%;
+
+    .flex-video {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    overflow-x: hidden;
+    position: relative;
+    border-radius: rem(5) rem(5) 0 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0, 0.4);
+
+    h2 {
+      position: relative;
+      width: calc(100% + 2px);
+      left: -1px;
+      margin: 0 !important;
+      padding: rem(20);
+      background: $primary; /* Old browsers */
+      background: -moz-linear-gradient(top, $primary 0%, darken($primary, 15%) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, $primary 0%,darken($primary, 15%) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, $primary 0%,darken($primary, 15%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='darken($primary, 15%)',GradientType=0 ); /* IE6-9 */
+
+      color: $white;
+    }
+  }
+
+  &__body {
+    max-height: 70vh;
+    padding: rem(30);
+    border-radius: 0 0 rem(5) rem(5);
+    overflow: auto;
+    background-color: $white;
+
+    p {
+      font-size: rem(18);
+      text-align: left;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 40px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 0 0 rem(5) rem(5);
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    }
+  }
+
+  // Gravity Forms Styling
+
+  .remodal__body {
+
+    .gform_button[disabled="disabled"] {
+      opacity: 0.5 !important;
+      cursor: default;
+
+      &:hover {
+        color: $white !important;
+        background-color: $primary !important;
+      }
+    }
+
+    .button {
+      //height: rem(42);
+      padding: rem(15) rem(25) !important;
+      //margin: 0 !important;
+      border: none !important;
+      color: $white;
+      line-height: rem(25) !important;
+      font-size: rem(20) !important;
+      font-weight: 700 !important;
+      background: $primary;
+      background: linear-gradient($primary, darken($primary, 15%));
+      transition: all 0.2s ease;
+
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $primary;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $white;
+
+        &:before {
+          right: 0;
+        }
+      }
+    }
+
+    .gform_wrapper {
+      margin: 0 !important;
+    }
+
+    .gform_footer {
+      text-align: center !important;
+    }
+
+    .gfield {
+      margin-top: 0 !important;
+      padding-right: 0 !important;
+
+      input {
+        width: 100%;
+        margin-top: 0 !important;
+        border: 1px solid #dde2ea;
+        border-radius: 5px !important;
+        padding: 12px 10px !important;
+        font-size: rem(18);
+        line-height: rem(24);
+      }
+      .gfield_checkbox {
+        input[type=checkbox] {
+          margin-top: 0 !important;
+          margin-right: rem(5) !important;
+
+          &#choice_1_7_1, &#choice_2_13_1 {
+            position: relative;
+            top: -11px;
+          }
+        }
+        label {
+          font-size: rem(18);
+          line-height: rem(20);
+        }
+      }
+      .gfield_radio {
+        input[type=radio] {
+          margin-top: 0 !important;
+          margin-right: rem(5) !important;
+
+          &#choice_2_14_5 {
+            position: relative;
+            top: -3px;
+          }
+        }
+        label {
+          font-size: rem(18);
+          line-height: rem(20);
+        }
+
+        input[value="Other"] {
+          width: calc(100% - 40px) !important;
+          padding: 5px 10px !important;
+          color: $lightGray;
+        }
+      }
+    }
+
+    form {
+      padding: 0 !important;
+    }
+  }
+}
+
+.remodal-overlay {
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.remodal-is-opened {
+  opacity: 1;
+  transform: scale(1);
+}
+.remodal-is-initialized {
+  //max-height: rem(600);
+}
+
+.close-bg {
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 35px;
+  height: 35px;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+.remodal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  opacity: 0.5;
+  transition: 0.2s all ease;
+
+  svg {
+    width: rem(40) !important;
+    height: rem(40);
+    border-radius: 50%;
+    color: mix(white, $primary, 40%);
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+
+    .close-bg {
+      background: rgba(255,255,255,0.1);
+    }
+  }
+}
+
+.remodal-wrapper.remodal-is-opened {
+  align-items: center;
+
+  .flex-video {
+    margin-bottom: 0;
+  }
+}

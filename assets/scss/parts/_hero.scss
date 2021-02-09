@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+  Hero
+------------------------------------------------------------------------------*/
+.hero {
+  position: relative;
+  padding: rem(70) 0;
+  overflow: hidden;
+
+}
+
+
+@media screen and (max-width: $medium-breakpoint) {
+  .hero {
+
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .hero {
+  }
+}

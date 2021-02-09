@@ -1,0 +1,49 @@
+/*----------------------------------------------------------------------------
+  Buttons
+----------------------------------------------------------------------------*/
+.button {
+  position: relative;
+  min-width: rem(210);
+  top: 0;
+  display: inline-block;
+  margin: 0 auto;
+  padding: rem(10) rem(20);
+  border-radius: rem(5);
+  text-align: center;
+  line-height: rem(25);
+  font-size: rem(18);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease !important;
+
+
+  &--primary {
+    color: $white;
+    background: $secondary;
+    background: linear-gradient($secondary, darken( $secondary, 15% ));
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  &--secondary {
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+
+  &--white {
+    color: $primary;
+    background-color: $offwhite;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

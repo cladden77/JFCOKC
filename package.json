@@ -1,0 +1,32 @@
+{
+  "name": "preludeplus",
+  "version": "0.0.2",
+  "description": "Custom Wordpress Theme",
+  "main": "theme.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "font-awesome": "^4.7.0",
+    "ginger-grid": "^2.2.0",
+    "nifty-nav": "^3.0.0",
+    "prelude-wp": "^4.2.5",
+    "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmalkin/preludeplus.git"
+  },
+  "keywords": [
+    "Wordpress"
+  ],
+  "author": "Malkin Creative",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dmalkin/preludeplus/issues"
+  },
+  "homepage": "https://github.com/dmalkin/preludeplus#readme"
+}

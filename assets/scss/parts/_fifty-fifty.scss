@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+  50/50
+------------------------------------------------------------------------------*/
+.fifty-fifty {
+  padding: 0 0 rem(50);
+  overflow: hidden;
+
+  &.background {
+    padding-top: rem(150);
+    background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
+  }
+
+  h1 {
+    padding: rem(50) 0;
+    color: $gray;
+  }
+
+  .button {
+    margin-top: rem(100);
+    margin-bottom: rem(50);
+  }
+
+  ul {
+    text-align: left;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .fifty-fifty {
+    padding: rem(30) 0;
+
+    &.background {
+      padding-top: rem(75);
+    }
+
+    .col-5 {
+      margin-top: rem(30);
+    }
+  }
+}
+
+// ie11 Fixes
+.ie-11 {
+  .fifty-fifty .row .col-6, .fifty-fifty .row .col-5 {
+    max-height: 450px;
+  }
+}

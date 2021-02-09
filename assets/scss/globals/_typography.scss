@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+  Typography
+------------------------------------------------------------------------------*/
+
+// Links
+a {
+  text-decoration: none;
+
+  &:hover {
+
+  }
+}
+
+// Headers
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+// Body Copy
+p, ul, ol, li {
+  margin-bottom: 15px;
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+}

@@ -1,0 +1,135 @@
+/*------------------------------------------------------------------------------
+  Dropdown
+------------------------------------------------------------------------------*/
+.dropdown {
+  padding: rem(80) 0;
+
+  h2 {
+    text-align: left;
+    color: #333;
+  }
+
+  .hide-overflow {
+    overflow: hidden;
+  }
+
+  &__no-pad {
+    padding: 0 !important;
+  }
+
+  &__box {
+    padding: 40px 0;
+    border-radius: 4px;
+
+    h2 {
+      padding: 0 40px;
+
+      span {
+        font-weight: bold;
+        color: $primary;
+      }
+    }
+
+    h6 {
+      padding: 0 40px;
+      font-weight: 900;
+    }
+
+    img {
+      margin: 20px auto;
+      padding: 0 2px;
+      transform: scale(1.01);
+
+      &.image-1 {
+        padding-left: 0;
+        padding-right: 4px;
+      }
+      &.image-3 {
+        padding-left: 4px;
+        padding-right: 0;
+      }
+    }
+
+    &__bottom-text {
+      padding: 0 40px;
+    }
+  }
+
+  .accordion {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+  }
+
+.active, .accordion:hover {
+  background-color: #fff;
+}
+
+.accordion:after {
+  content: "";
+  background-image: url('../img/arrow-point-down.svg');
+  width: 20px;
+  height: 20px;
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+.active:after {
+  content: "";
+  background-image: url('../img/arrow-point-up.svg');
+}
+
+.panel {
+  text-align: left;
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .dropdown {
+    &__box {
+
+      h2 {
+      padding: 0 20px;
+      }
+
+      h6 {
+        padding: 0;
+      }
+
+      img {
+        padding: 0;
+
+        &.image-1 {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        &.image-3 {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      &__bottom-text {
+        padding: 0 12px;
+      }
+    }
+  }
+}
