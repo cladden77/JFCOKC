@@ -5,23 +5,55 @@
 // Links
 a {
   text-decoration: none;
-
+  color: $primary;
   &:hover {
 
   }
 }
 
 // Headers
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+  font: $noto;
+  font-size: 76px;
+  color: $dark;
+  font-weight: $bold;
+}
+h2 {
+  font: $noto;
+  font-size: 66px;
+  color: $primary;
+  font-weight: $bold;
+}
+h3 {
+  font: $noto;
+  font-size: 56px;
+  color: $dark;
+  font-weight: $bold;
+}
+h4 {
+  font: $noto;
+  font-size: 46px;
+  color: $dark;
+  font-weight: $bold;
+}
+h5 {
+  font: $noto;
+  font-size: 36px;
+  color: $dark;
+}
+h6 {
+  font: $noto;
+  font-size: 26px;
+  color: $dark;
+}
 
 // Body Copy
 p, ul, ol, li {
   margin-bottom: 15px;
+  font-size: 16px;
+  font: $noto;
+  color: $gray;
+
 }
 
 // Media Queries

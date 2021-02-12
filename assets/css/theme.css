@@ -491,7 +491,6 @@ template {
 /*
 * Ginger
 * A minimal flexbox grid system named after a cute dog.
-* Version 2.1.1
 * Written by Eric Stout (@erwstout)
 * http://ericwstout.com
 */
@@ -1332,7 +1331,7 @@ header.nifty-nav-header {
 	width: 100%;
 	border: 0;
 	padding: 0;
-	background: #4b4b4b;
+	background: #27313a;
 	top: 88px;
 	display: none;
 	z-index: 9999;
@@ -1596,7 +1595,7 @@ header.nifty-nav-header {
 }
 
 .slick-dots li.slick-active button:before {
-	color: #282F38;
+	color: #2173bd;
 	opacity: 0.75;
 }
 
@@ -1892,6 +1891,47 @@ a img.aligncenter {
 
 a {
 	text-decoration: none;
+	color: #2173bd;
+}
+
+h1 {
+	font: "Noto Sans", sans-serif;
+	font-size: 76px;
+	color: #27313a;
+	font-weight: 700;
+}
+
+h2 {
+	font: "Noto Sans", sans-serif;
+	font-size: 66px;
+	color: #2173bd;
+	font-weight: 700;
+}
+
+h3 {
+	font: "Noto Sans", sans-serif;
+	font-size: 56px;
+	color: #27313a;
+	font-weight: 700;
+}
+
+h4 {
+	font: "Noto Sans", sans-serif;
+	font-size: 46px;
+	color: #27313a;
+	font-weight: 700;
+}
+
+h5 {
+	font: "Noto Sans", sans-serif;
+	font-size: 36px;
+	color: #27313a;
+}
+
+h6 {
+	font: "Noto Sans", sans-serif;
+	font-size: 26px;
+	color: #27313a;
 }
 
 p,
@@ -1899,6 +1939,9 @@ ul,
 ol,
 li {
 	margin-bottom: 15px;
+	font-size: 16px;
+	font: "Noto Sans", sans-serif;
+	color: #808080;
 }
 
 /*----------------------------------------------------------------------------
@@ -1939,7 +1982,7 @@ li {
 }
 
 .menu-social ul li a:hover {
-	color: #03FFD5;
+	color: #30aab1;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
@@ -2012,6 +2055,16 @@ li {
 .header {
 	-webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+	background-color: #27313a;
+	position: fixed;
+	z-index: 9999;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.header__logo-wrap {
+	padding: 1.875rem 0;
 }
 
 .header__logo-wrap a {
@@ -2022,11 +2075,11 @@ li {
 }
 
 .header__logo-wrap a img {
-	max-width: 200px;
+	max-width: 300px;
 }
 
 .header .header-search {
-	color: #282F38;
+	color: #2173bd;
 	margin-right: 20px;
 }
 
@@ -2074,7 +2127,7 @@ li {
 .header__navigation-wrap .primary-nav ul li a {
 	margin: 0;
 	padding-bottom: 32px;
-	color: #282F38;
+	color: #fff;
 	-webkit-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
@@ -2087,7 +2140,7 @@ li {
 	position: relative;
 	width: 0;
 	height: 3px;
-	background: #282F38;
+	background: #94cf4f;
 	-webkit-transition: width .3s;
 	-o-transition: width .3s;
 	transition: width .3s;
@@ -2110,7 +2163,7 @@ li {
 }
 
 .header__navigation-wrap .primary-nav .current-menu-item a {
-	color: #282F38;
+	color: #2173bd;
 }
 
 .header__navigation-wrap .primary-nav .current-menu-item a:before {
@@ -2120,7 +2173,7 @@ li {
 	top: 2.0625rem;
 	width: 100%;
 	height: 3px;
-	background: #282F38;
+	background: #2173bd;
 	-webkit-transition: width .3s;
 	-o-transition: width .3s;
 	transition: width .3s;
@@ -2135,7 +2188,7 @@ li {
 	display: block;
 	width: 0;
 	height: 3px;
-	background: #282F38;
+	background: #2173bd;
 	-webkit-transition: width .3s;
 	-o-transition: width .3s;
 	transition: width .3s;
@@ -2145,12 +2198,64 @@ li {
 	width: 100%;
 }
 
+.header__navigation-wrap ul.sub-menu {
+	display: none;
+	-webkit-box-orient: vertical !important;
+	-webkit-box-direction: normal !important;
+	-webkit-flex-direction: column !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
+	-webkit-box-pack: start !important;
+	-webkit-justify-content: flex-start !important;
+	-ms-flex-pack: start !important;
+	justify-content: flex-start !important;
+	position: absolute !important;
+	padding: 0;
+	list-style: none;
+	top: 43px !important;
+	left: -16px !important;
+	width: calc(100% + 50px);
+	z-index: 9999;
+}
+
+.header__navigation-wrap ul.sub-menu li {
+	top: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+	height: unset !important;
+}
+
+.header__navigation-wrap ul.sub-menu li.current_page_item a {
+	background: #2173bd;
+}
+
+.header__navigation-wrap ul.sub-menu li a {
+	display: block;
+	width: 100%;
+	padding: 10px 16px !important;
+	text-align: left;
+	color: #fff !important;
+	background: #27313a;
+	-webkit-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+
+.header__navigation-wrap ul.sub-menu li a:before,
+.header__navigation-wrap ul.sub-menu li a:after {
+	content: none !important;
+}
+
+.header__navigation-wrap ul.sub-menu li a:hover {
+	background: #2173bd;
+}
+
 .header__search-bar {
 	display: none;
 	position: absolute;
 	top: 91px;
 	padding: 0.625rem 0;
-	background: #282F38;
+	background: #2173bd;
 	z-index: 99999;
 }
 
@@ -2189,14 +2294,14 @@ li {
 	position: absolute;
 	top: 4px;
 	right: 0;
-	color: #282F38;
+	color: #2173bd;
 }
 
 .header__search-bar--close {
 	position: relative;
 	right: -12.8px;
 	top: 5px;
-	color: #7e8288;
+	color: #7aabd7;
 	opacity: 0.6;
 	-webkit-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
@@ -2220,7 +2325,7 @@ li {
 ------------------------------------------------------------------------------*/
 
 .footer {
-	background: #282F38;
+	background: #2173bd;
 	padding: 40px;
 	color: #fff;
 }
@@ -2244,11 +2349,11 @@ li {
 }
 
 .footer .footer-nav ul li a:hover {
-	color: #03FFD5;
+	color: #30aab1;
 }
 
 .footer--copywright {
-	background: #1d2329;
+	background: #1d66a7;
 }
 
 /*----------------------------------------------------------------------------
@@ -2284,10 +2389,10 @@ li {
 
 .button--primary {
 	color: #fff;
-	background: #03FFD5;
-	background: -webkit-gradient(linear, left top, left bottom, from(#03FFD5), to(#00b697));
-	background: -o-linear-gradient(#03FFD5, #00b697);
-	background: linear-gradient(#03FFD5, #00b697);
+	background: #30aab1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#30aab1), to(#207075));
+	background: -o-linear-gradient(#30aab1, #207075);
+	background: linear-gradient(#30aab1, #207075);
 }
 
 .button--primary:hover {
@@ -2296,22 +2401,22 @@ li {
 
 .button--secondary {
 	color: #fff;
-	background-color: #282F38;
-	border: 1px solid #282F38;
+	background-color: #2173bd;
+	border: 1px solid #2173bd;
 }
 
 .button--secondary:hover {
-	color: #282F38;
+	color: #2173bd;
 	background-color: #fff;
 }
 
 .button--white {
-	color: #282F38;
-	background-color: #f0f0fa;
+	color: #2173bd;
+	background-color: #f2f2f2;
 }
 
 .button--white:hover {
-	color: #282F38;
+	color: #2173bd;
 }
 
 /*------------------------------------------------------------------------------
@@ -2374,7 +2479,7 @@ li {
 
 .dropdown__box h2 span {
 	font-weight: bold;
-	color: #282F38;
+	color: #2173bd;
 }
 
 .dropdown__box h6 {
@@ -2469,7 +2574,7 @@ li {
 
 .fifty-fifty h1 {
 	padding: 3.125rem 0;
-	color: #565554;
+	color: #808080;
 }
 
 .fifty-fifty .button {
@@ -2542,10 +2647,10 @@ li {
 	left: -1px;
 	margin: 0 !important;
 	padding: 1.25rem;
-	background: #282F38; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-	background: -webkit-gradient(linear, left top, left bottom, from(#282F38), to(#080a0b));
-	background: -o-linear-gradient(top, #282F38 0%, #080a0b 100%);
-	background: linear-gradient(to bottom, #282F38 0%, #080a0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #2173bd; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2173bd), to(#164b7c));
+	background: -o-linear-gradient(top, #2173bd 0%, #164b7c 100%);
+	background: linear-gradient(to bottom, #2173bd 0%, #164b7c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='darken($primary, 15%)',GradientType=0 ); /* IE6-9 */
 	color: #fff;
 }
@@ -2584,7 +2689,7 @@ li {
 
 .remodal .remodal__body .gform_button[disabled="disabled"]:hover {
 	color: #fff !important;
-	background-color: #282F38 !important;
+	background-color: #2173bd !important;
 }
 
 .remodal .remodal__body .button {
@@ -2594,10 +2699,10 @@ li {
 	line-height: 1.5625rem !important;
 	font-size: 1.25rem !important;
 	font-weight: 700 !important;
-	background: #282F38;
-	background: -webkit-gradient(linear, left top, left bottom, from(#282F38), to(#080a0b));
-	background: -o-linear-gradient(#282F38, #080a0b);
-	background: linear-gradient(#282F38, #080a0b);
+	background: #2173bd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2173bd), to(#164b7c));
+	background: -o-linear-gradient(#2173bd, #164b7c);
+	background: linear-gradient(#2173bd, #164b7c);
 	-webkit-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
@@ -2616,7 +2721,7 @@ li {
 	left: 0;
 	right: 100%;
 	bottom: 0;
-	background: #282F38;
+	background: #2173bd;
 	height: 4px;
 	-webkit-transition-property: right;
 	-o-transition-property: right;
@@ -2695,7 +2800,7 @@ li {
 .remodal .remodal__body .gfield .gfield_radio input[value="Other"] {
 	width: calc(100% - 40px) !important;
 	padding: 5px 10px !important;
-	color: #a1a1a1;
+	color: #dedede;
 }
 
 .remodal .remodal__body form {
@@ -2744,7 +2849,7 @@ li {
 	width: 2.5rem !important;
 	height: 2.5rem;
 	border-radius: 50%;
-	color: #7e8288;
+	color: #7aabd7;
 }
 
 .remodal-close svg:hover {

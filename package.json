@@ -6,7 +6,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
-    "ginger-grid": "^2.2.0",
+    "ginger-grid": "^2.3.1",
     "nifty-nav": "^3.0.0",
     "prelude-wp": "^4.2.5",
     "remodal": "^1.1.1",

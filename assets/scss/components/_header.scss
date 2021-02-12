@@ -4,13 +4,19 @@
 
 .header {
   box-shadow: $box-shadow;
+  background-color: $dark;
+  position: fixed;
+  z-index: 9999;
+  transition: all 0.3s ease;
 
   &__logo-wrap {
+    padding: rem(30) 0;
+
     a {
       display: flex;
 
       img {
-        max-width: 200px;
+        max-width: 300px;
       }
     }
   }
@@ -45,7 +51,7 @@
           a {
             margin: 0;
             padding-bottom: 32px;
-            color: $primary;
+            color: $white;
             transition: all 0.2s ease;
 
             &:after {
@@ -55,7 +61,7 @@
               position: relative;
               width: 0;
               height: 3px;
-              background: $primary;
+              background: $lime;
               transition: width .3s;
             }
 
@@ -105,6 +111,50 @@
 
           &:hover:after {
             width: 100%;
+          }
+        }
+      }
+    }
+
+      ul.sub-menu {
+      display: none;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      position: absolute !important;
+      padding: 0;
+      list-style: none;
+      top: 43px !important;
+      left: -16px !important;
+      width: calc(100% + 50px);
+      z-index: 9999;
+
+      li {
+        top: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        height: unset !important;
+
+        &.current_page_item {
+          a {
+            background: $primary;
+          }
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 10px 16px !important;
+          text-align: left;
+          color: $white !important;
+          background: $dark;
+          transition: 0.2s ease;
+
+          &:before, &:after {
+            content: none !important;
+          }
+
+          &:hover {
+            background: $primary;
           }
         }
       }

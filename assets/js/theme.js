@@ -19,6 +19,17 @@ jQuery( document ).ready(function( $ ) {
 	// Nifty Nav
   $('#nifty-nav-toggle').niftyNav();
 
+	// Mobile Nav submenu
+	// Nifty click actions for sub menus
+	$('.nifty-panel .menu-item-has-children a').click(function(){
+	  $(this).toggleClass('open');
+	});
+
+	$('.nifty-panel .menu-item-has-children').click(function(){
+		$(this).toggleClass('open');
+		$(this).find('.sub-menu').first().slideToggle();
+	});
+
 	// Social Menu
 	$('.menu-social li a').text('');
 
