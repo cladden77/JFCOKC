@@ -12,27 +12,27 @@ if( have_rows('flexible_content') ): ?>
 
        // CTA
        if( get_row_layout() == 'cta' ) :
-         get_template_part('parts/global/flexible-content/cta');
+         get_template_part('parts/flexible-content/cta');
 
        // Dropdowns
        elseif( get_row_layout() == 'dropdowns' ) :
-         get_template_part('parts/global/flexible-content/dropdowns');
+         get_template_part('parts/flexible-content/dropdowns');
 
        // 1 Column (Full Width)
        elseif( get_row_layout() == 'one_column' ) :
-         get_template_part('parts/global/flexible-content/one-col');
+         get_template_part('parts/flexible-content/one-col');
 
        // 50/50
        elseif( get_row_layout() == 'fifty_fifty' ) :
-         get_template_part('parts/global/flexible-content/fifty-fifty');
+         get_template_part('parts/flexible-content/fifty-fifty');
 
        // 3 Column
        elseif( get_row_layout() == 'three_column' ) :
-         get_template_part('parts/global/flexible-content/three-col');
+         get_template_part('parts/flexible-content/three-col');
 
        // Padding Block
        elseif( get_row_layout() == 'padding_block' ) :
-         get_template_part('parts/global/flexible-content/padding-block');
+         get_template_part('parts/flexible-content/padding-block');
 
        endif;
 

@@ -16,9 +16,10 @@
 ?>
 
 
-<section class="container hero" style="background:url('<?php echo $bg_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;">
+<section class="container hero" style="background:linear-gradient(
+      rgba(0, 45, 90), rgba(65, 186, 182, 0.5)), url('<?php echo $bg_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;">
   <div class="row row--full-width hero__row">
-    <div class="col-5 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content">
+    <div class="col-6 sm-col-11 col-centered text-center sm-col-centered sm-text-center hero__row__content">
       <?php if($header) : ?>
         <h1 class="hero__header">
           <?php echo $header; ?>
@@ -29,7 +30,7 @@
           <?php echo $subheader; ?>
         </h2>
       <?php endif; ?>
-      <div >
+      <div  class="text-center">
         <a class="button button--primary hero-button" href="<?php echo $link['url']; ?>">
           <?php echo $link['title']; ?>
         </a>

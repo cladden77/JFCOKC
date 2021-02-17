@@ -3,8 +3,14 @@
 ------------------------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding: rem(70) 0;
+  padding: rem(250) 0 rem(150);
   overflow: hidden;
+  top: 75px;
+
+  h1 {
+    font-size: 50px;
+    color: $white;
+  }
 
 }
 

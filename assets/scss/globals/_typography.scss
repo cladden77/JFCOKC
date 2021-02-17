@@ -6,8 +6,9 @@
 a {
   text-decoration: none;
   color: $primary;
+  font: $noto;
   &:hover {
-
+    color: $secondary;
   }
 }
 

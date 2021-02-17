@@ -31,6 +31,7 @@
 
   <?php // Header ?>
   <header>
+    <?php get_template_part('parts/partials/utility-nav'); ?>
     <?php get_template_part('parts/partials/header'); ?>
   </header>
 

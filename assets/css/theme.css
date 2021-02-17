@@ -1892,6 +1892,11 @@ a img.aligncenter {
 a {
 	text-decoration: none;
 	color: #2173bd;
+	font: "Noto Sans", sans-serif;
+}
+
+a:hover {
+	color: #30aab1;
 }
 
 h1 {
@@ -2049,8 +2054,33 @@ li {
 }
 
 /*------------------------------------------------------------------------------
+Utility Nav
+------------------------------------------------------------------------------*/
+
+.utility-nav {
+	padding: 0.9375rem auto;
+}
+
+.utility-nav h5 {
+	margin: 1.25rem;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+
+.navbar-fixed-top-top.scrolled {
+	top: 0;
+}
+
+.navbar-fixed-top.scrolled {
+	background-color: #27313a !important;
+	-webkit-transition: background-color 400ms linear;
+	-o-transition: background-color 400ms linear;
+	transition: background-color 400ms linear;
+}
 
 .header {
 	-webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
@@ -2064,7 +2094,7 @@ li {
 }
 
 .header__logo-wrap {
-	padding: 1.875rem 0;
+	padding: 1.25rem 0;
 }
 
 .header__logo-wrap a {
@@ -2325,8 +2355,7 @@ li {
 ------------------------------------------------------------------------------*/
 
 .footer {
-	background: #2173bd;
-	padding: 40px;
+	background: #27313a;
 	color: #fff;
 }
 
@@ -2353,7 +2382,20 @@ li {
 }
 
 .footer--copywright {
-	background: #1d66a7;
+	background: #27313a;
+}
+
+.footer--copywright a {
+	color: #94cf4f;
+}
+
+.footer--copywright a:hover {
+	color: #30aab1;
+}
+
+.footer--copywright h5 {
+	font-size: 16px;
+	color: #fff;
 }
 
 /*----------------------------------------------------------------------------
@@ -2389,10 +2431,7 @@ li {
 
 .button--primary {
 	color: #fff;
-	background: #30aab1;
-	background: -webkit-gradient(linear, left top, left bottom, from(#30aab1), to(#207075));
-	background: -o-linear-gradient(#30aab1, #207075);
-	background: linear-gradient(#30aab1, #207075);
+	background: #2173bd;
 }
 
 .button--primary:hover {
@@ -2597,8 +2636,14 @@ li {
 
 .hero {
 	position: relative;
-	padding: 4.375rem 0;
+	padding: 15.625rem 0 9.375rem;
 	overflow: hidden;
+	top: 75px;
+}
+
+.hero h1 {
+	font-size: 50px;
+	color: #fff;
 }
 
 /*------------------------------------------------------------------------------

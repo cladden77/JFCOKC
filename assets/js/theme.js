@@ -101,4 +101,29 @@ jQuery( document ).ready(function( $ ) {
 		  });
 		}
 
+		//navigation bar scroll
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".navbar-fixed-top-top");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		});
+
+		//Nav Scroll to top of page:
+		//change the integers below to match the height of your upper div.
+	  //Just add a 1 to the last number.  console.log($(window).scrollTop())
+	  //to figure out what the scroll position is when exactly you want to fix the nav
+		$(window).scroll(function () {
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 0) {
+      $('header').addClass('navbar-fixed-top-top');
+    }
+
+    if ($(window).scrollTop() < 1) {
+      $('header').removeClass('navbar-fixed-top-top');
+    }
+  });
+
 });

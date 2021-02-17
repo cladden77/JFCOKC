@@ -2,6 +2,19 @@
   Header
 ------------------------------------------------------------------------------*/
 
+.navbar-fixed-top-top {
+  &.scrolled {
+    top: 0;
+  }
+}
+
+.navbar-fixed-top {
+  &.scrolled {
+    background-color: $dark !important;
+    transition: background-color 400ms linear;
+  }
+}
+
 .header {
   box-shadow: $box-shadow;
   background-color: $dark;
@@ -10,7 +23,7 @@
   transition: all 0.3s ease;
 
   &__logo-wrap {
-    padding: rem(30) 0;
+    padding: rem(20) 0;
 
     a {
       display: flex;
