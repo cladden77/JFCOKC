@@ -3,13 +3,18 @@
 ------------------------------------------------------------------------------*/
 .hero {
   position: relative;
-  padding: rem(250) 0 rem(150);
+  padding: rem(200) 0 rem(150);
   overflow: hidden;
-  top: 75px;
+  top: 80px;
+  margin-bottom: rem(50);
 
   h1 {
     font-size: 50px;
     color: $white;
+  }
+
+  .hero__row {
+    top: -20px;
   }
 
 }
@@ -17,11 +22,22 @@
 
 @media screen and (max-width: $medium-breakpoint) {
   .hero {
+    top: 55px;
 
+    h1 {
+      font-size: 42px;
+      color: $white;
+    }
   }
 }
 
 @media screen and (max-width: $small-breakpoint) {
   .hero {
+    top: 80px;
+    padding: rem(100) 0 rem(100);
+
+    .hero__row {
+      top:  -10px;
+    }
   }
 }

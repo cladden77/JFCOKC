@@ -9,4 +9,20 @@ Utility Nav
     font-size: 20px;
     text-decoration: underline;
   }
+
+  .button {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .utility-nav {
+
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .utility-nav {
+    display: none !important;
+  }
 }

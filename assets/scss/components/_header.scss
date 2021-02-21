@@ -4,14 +4,15 @@
 
 .navbar-fixed-top-top {
   &.scrolled {
-    top: 0;
+    transition: top .1s;
+    top: 0 !important;
   }
 }
 
 .navbar-fixed-top {
   &.scrolled {
+    transition: top .1s;
     background-color: $dark !important;
-    transition: background-color 400ms linear;
   }
 }
 
@@ -20,10 +21,10 @@
   background-color: $dark;
   position: fixed;
   z-index: 9999;
-  transition: all 0.3s ease;
+  top: 65px;
 
   &__logo-wrap {
-    padding: rem(20) 0;
+    padding: rem(20) rem(20);
 
     a {
       display: flex;
@@ -238,5 +239,21 @@
         opacity: 1;
       }
     }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $medium-breakpoint) {
+  .header {
+    &__logo-wrap {
+      padding: rem(10) rem(10);
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .header {
+    top: 0 !important;
   }
 }

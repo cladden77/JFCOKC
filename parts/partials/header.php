@@ -13,12 +13,12 @@
 
 <div class="container navbar-fixed-top navbar-fixed-top-top header">
   <div class="row row--align-items-center row--justify-content-center">
-    <div class="col-3 md-col-2 sm-col-10 header__logo-wrap">
+    <div class="col-3 md-col-3 sm-col-10 header__logo-wrap">
       <a href="<?php echo home_url(); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo-primary--white.svg" alt="Jon Freemon consulting" />
       </a>
     </div>
-    <div class="col-9 md-col-10 sm-col-6 sm-hide text-right header__navigation-wrap">
+    <div class="col-9 md-col-9 sm-col-6 sm-hide text-right header__navigation-wrap">
       <?php // Primary Menu
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>

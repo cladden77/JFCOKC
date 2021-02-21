@@ -2067,19 +2067,26 @@ Utility Nav
 	text-decoration: underline;
 }
 
+.utility-nav .button {
+	right: 40px;
+}
+
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
 
 .navbar-fixed-top-top.scrolled {
-	top: 0;
+	-webkit-transition: top .1s;
+	-o-transition: top .1s;
+	transition: top .1s;
+	top: 0 !important;
 }
 
 .navbar-fixed-top.scrolled {
+	-webkit-transition: top .1s;
+	-o-transition: top .1s;
+	transition: top .1s;
 	background-color: #27313a !important;
-	-webkit-transition: background-color 400ms linear;
-	-o-transition: background-color 400ms linear;
-	transition: background-color 400ms linear;
 }
 
 .header {
@@ -2088,13 +2095,11 @@ Utility Nav
 	background-color: #27313a;
 	position: fixed;
 	z-index: 9999;
-	-webkit-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	top: 65px;
 }
 
 .header__logo-wrap {
-	padding: 1.25rem 0;
+	padding: 1.25rem 1.25rem;
 }
 
 .header__logo-wrap a {
@@ -2418,7 +2423,7 @@ Utility Nav
 	display: inline-block;
 	margin: 0 auto;
 	padding: 0.625rem 1.25rem;
-	border-radius: 0.3125rem;
+	border-radius: 1.25rem;
 	text-align: center;
 	line-height: 1.5625rem;
 	font-size: 1.125rem;
@@ -2616,6 +2621,10 @@ Utility Nav
 	color: #808080;
 }
 
+.fifty-fifty h3 {
+	margin-top: 6.25rem;
+}
+
 .fifty-fifty .button {
 	margin-top: 6.25rem;
 	margin-bottom: 3.125rem;
@@ -2636,14 +2645,19 @@ Utility Nav
 
 .hero {
 	position: relative;
-	padding: 15.625rem 0 9.375rem;
+	padding: 12.5rem 0 9.375rem;
 	overflow: hidden;
-	top: 75px;
+	top: 80px;
+	margin-bottom: 3.125rem;
 }
 
 .hero h1 {
 	font-size: 50px;
 	color: #fff;
+}
+
+.hero .hero__row {
+	top: -20px;
 }
 
 /*------------------------------------------------------------------------------
@@ -3943,6 +3957,23 @@ Utility Nav
 	margin: 0 auto;
 }
 
+.header__logo-wrap {
+	padding: 0.625rem 0.625rem;
+}
+
+.button {
+	font-size: 0.875rem;
+}
+
+.hero {
+	top: 55px;
+}
+
+.hero h1 {
+	font-size: 42px;
+	color: #fff;
+}
+
 }
 
 @media screen and (max-width: 65.625em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -4961,6 +4992,14 @@ Utility Nav
 	margin: 0 auto;
 }
 
+.utility-nav {
+	display: none !important;
+}
+
+.header {
+	top: 0 !important;
+}
+
 .dropdown__box h2 {
 	padding: 0 20px;
 }
@@ -4997,6 +5036,15 @@ Utility Nav
 
 .fifty-fifty .col-5 {
 	margin-top: 1.875rem;
+}
+
+.hero {
+	top: 80px;
+	padding: 6.25rem 0 6.25rem;
+}
+
+.hero .hero__row {
+	top: -10px;
 }
 
 }

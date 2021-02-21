@@ -24,10 +24,7 @@
   <section class="container footer footer--copywright">
     <div class="row">
       <!-- Footer Copywright and Credit here -->
-      <div class="col-6 sm-col-12 sm-text-center">
-        <h5>Created by <a href="http://csldesigns.com">Ladden Studios</a></h5>
-      </div>
-      <div class="col-6 sm-col-12 sm-text-center footer--copywright__wrap text-right">
+      <div class="col-12 sm-col-12 sm-text-center footer--copywright__wrap text-left">
         <h5 class="copyright">&copy; <?php echo date("Y"); ?> Business Name All Rights Reserved.</h5>
       </div>
     </div>

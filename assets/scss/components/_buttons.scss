@@ -8,7 +8,7 @@
   display: inline-block;
   margin: 0 auto;
   padding: rem(10) rem(20);
-  border-radius: rem(5);
+  border-radius: rem(20);
   text-align: center;
   line-height: rem(25);
   font-size: rem(18);
@@ -44,5 +44,17 @@
     &:hover {
       color: $primary;
     }
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .button {
+    font-size: rem(14);
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .button {
+
   }
 }
