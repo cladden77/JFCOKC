@@ -2,7 +2,7 @@
   50/50
 ------------------------------------------------------------------------------*/
 .fifty-fifty {
-  padding: 0 0 rem(50);
+  padding: rem(150) 0 0;
   overflow: hidden;
 
   &.background {
@@ -16,12 +16,23 @@
   }
 
   h3 {
-    margin-top: rem(100);
+    color: $primary;
+
+    margin: 0;
+    //margin-top: rem(100);
   }
 
   .button {
     margin-top: rem(100);
     margin-bottom: rem(50);
+  }
+
+  p a {
+    color: $secondary;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   ul {
@@ -32,7 +43,7 @@
 // Media Queries
 @media screen and (max-width:$small-breakpoint) {
   .fifty-fifty {
-    padding: rem(30) 0;
+    padding: rem(75) 0 0;
 
     &.background {
       padding-top: rem(75);

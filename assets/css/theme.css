@@ -2095,7 +2095,6 @@ Utility Nav
 	background-color: #27313a;
 	position: fixed;
 	z-index: 9999;
-	top: 65px;
 }
 
 .header__logo-wrap {
@@ -2607,7 +2606,7 @@ Utility Nav
 ------------------------------------------------------------------------------*/
 
 .fifty-fifty {
-	padding: 0 0 3.125rem;
+	padding: 9.375rem 0 0;
 	overflow: hidden;
 }
 
@@ -2622,12 +2621,21 @@ Utility Nav
 }
 
 .fifty-fifty h3 {
-	margin-top: 6.25rem;
+	color: #2173bd;
+	margin: 0;
 }
 
 .fifty-fifty .button {
 	margin-top: 6.25rem;
 	margin-bottom: 3.125rem;
+}
+
+.fifty-fifty p a {
+	color: #30aab1;
+}
+
+.fifty-fifty p a:hover {
+	color: #2173bd;
 }
 
 .fifty-fifty ul {
@@ -5027,7 +5035,7 @@ Utility Nav
 }
 
 .fifty-fifty {
-	padding: 1.875rem 0;
+	padding: 4.6875rem 0 0;
 }
 
 .fifty-fifty.background {

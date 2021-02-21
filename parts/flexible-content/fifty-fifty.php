@@ -14,8 +14,8 @@ $btn = get_sub_field('button');
 $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
 
 <section class="container fifty-fifty">
-  <div class="row">
-    <div class="sm-col-11 col-10 col-centered">
+  <div class="row row--align-items-center row--align-items-stretch">
+    <div class="sm-col-11 col-12 col-centered">
       <div class="row row--align-items-center<?php echo $rowClass; ?>">
 
         <?php if($header) : ?>
