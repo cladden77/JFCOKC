@@ -23,6 +23,19 @@
 
     &:hover {
       color: $white !important;
+
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 8px 5px -5px gray;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-property: box-shadow, transform;
+      transition-property: box-shadow, transform;
+
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+      -webkit-font-smoothing: antialiased;
     }
   }
 

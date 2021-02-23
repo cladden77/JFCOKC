@@ -2440,6 +2440,23 @@ Utility Nav
 
 .button--primary:hover {
 	color: #fff !important;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-box-shadow: 0 8px 5px -5px gray;
+	box-shadow: 0 8px 5px -5px gray;
+	-webkit-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: box-shadow, transform;
+	-webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+	transition-property: -webkit-box-shadow, -webkit-transform;
+	-o-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+	-webkit-font-smoothing: antialiased;
 }
 
 .button--secondary {
@@ -2947,6 +2964,10 @@ Utility Nav
 /*------------------------------------------------------------------------------
   3 Col
 ------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------
+  Logos Bar
+----------------------------------------------------------------------------*/
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 

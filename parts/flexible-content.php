@@ -34,6 +34,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'padding_block' ) :
          get_template_part('parts/flexible-content/padding-block');
 
+       // Logos bar
+       elseif( get_row_layout() == 'logos_bar' ) :
+         get_template_part('parts/flexible-content/logos-bar');
+
        endif;
 
      endwhile; // close the loop of flexible content
