@@ -2969,6 +2969,15 @@ Utility Nav
   Logos Bar
 ----------------------------------------------------------------------------*/
 
+.logos-bar {
+	background-color: #ededed;
+	height: 200px;
+}
+
+.logos-bar__image img {
+	max-height: 6.25rem;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
 .col-1 {

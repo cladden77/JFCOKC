@@ -22,6 +22,7 @@ var phpFiles     = ['./**/*.php', './*.php'],
       './assets/js/*.js',
       '!./assets/js/font-awesome.config.js',
       '!./assets/js/theme.min.js',
+      '!./assets/js/jquery.min.js',
       '!./assets/js/all.js'
     ],
     url          = 'jfcokc.local'; // See https://browsersync.io/docs/options/#option-proxy
