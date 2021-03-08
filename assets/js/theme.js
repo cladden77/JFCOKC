@@ -126,4 +126,20 @@ jQuery( document ).ready(function( $ ) {
     }
   });
 
+	//slick slider for Testimonials
+$('.testimonials__grid').slick({ //add in your correct containing element
+	infinite: true,
+	slidesToShow: 1,
+	centerMode: true,
+	//variableWidth: true,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	// speed: 300,
+	adaptiveHeight: true,
+	// autoplaySpeed: 5000
+});
+
 });

@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+  Contact
+------------------------------------------------------------------------------*/
+.contact-form {
+  h2 {
+    color: $dark;
+    margin-bottom: rem(20);
+  }
+
+  hr {
+    max-width: 100px;
+    border-color: $lime;
+    border-width: 2px;
+    margin-bottom: rem(30);
+    border-style: solid;
+  }
+
+  // Form styles
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+      border-radius: 10px;
+      border-width: thin;
+      border-style: solid;
+      border-color: $lightGray;
+      padding: rem(10);
+    }
+
+  .gform_wrapper .gform_footer {
+    text-align: center;
+  }
+
+  .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
+    background-color: $white;
+
+    &_hover {
+      cursor: pointer;
+      background-color: $lightGray;
+    }
+  }
+}

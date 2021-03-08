@@ -2971,11 +2971,118 @@ Utility Nav
 
 .logos-bar {
 	background-color: #ededed;
-	height: 200px;
+}
+
+.logos-bar__image {
+	padding: 2.5rem 0;
 }
 
 .logos-bar__image img {
-	max-height: 6.25rem;
+	width: auto;
+	height: 100px;
+	max-height: 100%;
+	margin: auto 1.875rem;
+}
+
+/*------------------------------------------------------------------------------
+  Testimonials
+------------------------------------------------------------------------------*/
+
+.testimonials-section {
+	background-color: #808080;
+	padding: 25px 0;
+	height: 575px;
+}
+
+.testimonials-section p {
+	font-size: 22px;
+	line-height: 34px;
+	color: #fff;
+	margin: 0 9.375rem;
+}
+
+.testimonials-section h2 {
+	font-size: 52px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.testimonials-section h3 {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.testimonials-section hr {
+	max-width: 200px;
+	border-color: #fff;
+	border-width: 2px;
+	margin-bottom: 1.875rem;
+	border-style: solid;
+}
+
+.testimonials-section .slick-list .draggable {
+	height: auto;
+}
+
+.testimonials-section .slick-dots li.slick-active button:before {
+	background: url("../img/slider-dot-active.svg") no-repeat;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.testimonials-section .slick-dots li button:before {
+	background: url("../img/slider-dot-inactive.svg") no-repeat;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.testimonials-section .slick-dotted.slick-slider {
+	margin-bottom: 60px;
+}
+
+/*------------------------------------------------------------------------------
+  Contact
+------------------------------------------------------------------------------*/
+
+.contact-form h2 {
+	color: #27313a;
+	margin-bottom: 1.25rem;
+}
+
+.contact-form hr {
+	max-width: 100px;
+	border-color: #94cf4f;
+	border-width: 2px;
+	margin-bottom: 1.875rem;
+	border-style: solid;
+}
+
+.contact-form .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	border-radius: 10px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #dedede;
+	padding: 0.625rem;
+}
+
+.contact-form .gform_wrapper .gform_footer {
+	text-align: center;
+}
+
+.contact-form .gform_wrapper .gform_footer input.button,
+.contact-form .gform_wrapper .gform_footer input[type=submit],
+.contact-form .gform_wrapper .gform_page_footer input.button,
+.contact-form .gform_wrapper .gform_page_footer input[type=submit] {
+	background-color: #fff;
+}
+
+.contact-form .gform_wrapper .gform_footer input.button_hover,
+.contact-form .gform_wrapper .gform_footer input[type=submit]_hover,
+.contact-form .gform_wrapper .gform_page_footer input.button_hover,
+.contact-form .gform_wrapper .gform_page_footer input[type=submit]_hover {
+	cursor: pointer;
+	background-color: #dedede;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -4010,6 +4117,15 @@ Utility Nav
 .hero h1 {
 	font-size: 42px;
 	color: #fff;
+}
+
+.testimonials-section h2 {
+	font-size: 32px;
+}
+
+.testimonials-section p {
+	font-size: 18px;
+	line-height: 24px;
 }
 
 }
@@ -5083,6 +5199,26 @@ Utility Nav
 
 .hero .hero__row {
 	top: -10px;
+}
+
+.testimonials-section {
+	background-image: none !important;
+	background: #30aab1 !important;
+	padding: 15px 0;
+}
+
+.testimonials-section h2 {
+	margin-top: 10px;
+}
+
+.testimonials-section p {
+	font-size: 18px;
+	margin: 0 3.125rem;
+}
+
+.testimonials-section h4 {
+	font-size: 18px;
+	color: #223246;
 }
 
 }

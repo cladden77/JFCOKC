@@ -38,6 +38,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'logos_bar' ) :
          get_template_part('parts/flexible-content/logos-bar');
 
+       // Testimonials
+       elseif( get_row_layout() == 'testimonials' ) :
+         get_template_part('parts/flexible-content/testimonials');
+
        endif;
 
      endwhile; // close the loop of flexible content
