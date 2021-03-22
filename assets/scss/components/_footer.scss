@@ -4,16 +4,27 @@
 
 .footer {
   background: $dark;
-  //padding: 40px;
+  padding: 40px 0 0 0;
   color: $white;
 
+
   &__logo {
-    max-width: rem(200);
+    max-width: 90%;
     padding-bottom: 20px;
 
     &:hover {
       cursor: pointer;
     }
+  }
+
+  h3 {
+    color: $white;
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .no-navigation {
+    display: none;
   }
 
   .footer-nav {

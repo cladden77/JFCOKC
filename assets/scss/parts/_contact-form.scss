@@ -1,7 +1,9 @@
 /*------------------------------------------------------------------------------
-  Contact
+  Contact Form
 ------------------------------------------------------------------------------*/
 .contact-form {
+  padding: rem(50) 0;
+
   h2 {
     color: $dark;
     margin-bottom: rem(20);
@@ -35,5 +37,13 @@
       cursor: pointer;
       background-color: $lightGray;
     }
+  }
+
+   .gform_wrapper .gform_footer input.button, .contact-form .gform_wrapper .gform_footer input[type=submit], .contact-form .gform_wrapper .gform_page_footer input.button, .contact-form .gform_wrapper .gform_page_footer input[type=submit] {
+    border-radius: 10px;
+    border-width: thin;
+    border-style: solid;
+    border-color: $lightGray;
+    color: $gray;
   }
 }

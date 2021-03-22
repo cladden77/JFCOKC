@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------------------
+  About
+------------------------------------------------------------------------------*/
+.about {
+  padding: rem(75) 0 rem(75) 0;
+  overflow: hidden;
+  background-color: $lightGray;
+
+  &.background {
+    padding-top: rem(150);
+    background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
+  }
+
+  h1 {
+    padding: rem(50) 0;
+    color: $gray;
+  }
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+  h3 {
+    color: $primary;
+
+    margin: 0;
+    //margin-top: rem(100);
+  }
+
+  .button {
+    margin-top: rem(100);
+    margin-bottom: rem(50);
+  }
+
+  p a {
+    color: $secondary;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  &--image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+
+    .image-stack_item--top {
+      grid-column: 1 / span 8;
+      grid-row: 1; //must be on same row as other image
+      z-index: 1; //makes this image render on top of the bottom
+    }
+
+    .image-stack_item--bottom {
+      grid-column: 5 / -1;
+      grid-row: 1; //make this image be on the same row
+      padding-top: 90%; //pushes the image down and keeps proportion
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .about {
+    padding: rem(75) 0 0;
+
+    &.background {
+      padding-top: rem(75);
+    }
+
+    .col-5 {
+      margin-top: rem(30);
+    }
+  }
+}
+
+// ie11 Fixes
+.ie-11 {
+  .about .row .col-6, .about .row .col-5 {
+    max-height: 450px;
+  }
+}

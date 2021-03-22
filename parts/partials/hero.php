@@ -18,7 +18,7 @@
 
 <section class="container hero" style="background: linear-gradient(180deg, rgba(33,115,189,0.70) 0%, rgba(17,58,95,1) 100%), url('<?php echo $bg_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;">
   <div class="row row--full-width hero__row">
-    <div class="col-6 sm-col-11 col-centered text-center sm-col-centered sm-text-center hero__row__content">
+    <div data-aos="fade-down" class="col-6 sm-col-11 col-centered text-center sm-col-centered sm-text-center hero__row__content">
       <?php if($header) : ?>
         <h1 class="hero__header">
           <?php echo $header; ?>

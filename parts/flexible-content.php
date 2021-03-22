@@ -42,6 +42,14 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'testimonials' ) :
          get_template_part('parts/flexible-content/testimonials');
 
+       // About
+       elseif( get_row_layout() == 'about' ) :
+         get_template_part('parts/flexible-content/about');
+
+       // Contact Form
+       elseif( get_row_layout() == 'contact_form' ) :
+         get_template_part('parts/flexible-content/contact-form');
+
        endif;
 
      endwhile; // close the loop of flexible content

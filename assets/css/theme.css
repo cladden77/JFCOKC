@@ -1947,6 +1947,7 @@ li {
 	font-size: 16px;
 	font: "Noto Sans", sans-serif;
 	color: #808080;
+	line-height: 30px;
 }
 
 /*----------------------------------------------------------------------------
@@ -2360,16 +2361,27 @@ Utility Nav
 
 .footer {
 	background: #27313a;
+	padding: 40px 0 0 0;
 	color: #fff;
 }
 
 .footer__logo {
-	max-width: 12.5rem;
+	max-width: 90%;
 	padding-bottom: 20px;
 }
 
 .footer__logo:hover {
 	cursor: pointer;
+}
+
+.footer h3 {
+	color: #fff;
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.footer .no-navigation {
+	display: none;
 }
 
 .footer .footer-nav ul {
@@ -3042,8 +3054,12 @@ Utility Nav
 }
 
 /*------------------------------------------------------------------------------
-  Contact
+  Contact Form
 ------------------------------------------------------------------------------*/
+
+.contact-form {
+	padding: 3.125rem 0;
+}
 
 .contact-form h2 {
 	color: #27313a;
@@ -3083,6 +3099,86 @@ Utility Nav
 .contact-form .gform_wrapper .gform_page_footer input[type=submit]_hover {
 	cursor: pointer;
 	background-color: #dedede;
+}
+
+.contact-form .gform_wrapper .gform_footer input.button,
+.contact-form .contact-form .gform_wrapper .gform_footer input[type=submit],
+.contact-form .contact-form .gform_wrapper .gform_page_footer input.button,
+.contact-form .contact-form .gform_wrapper .gform_page_footer input[type=submit] {
+	border-radius: 10px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #dedede;
+	color: #808080;
+}
+
+/*------------------------------------------------------------------------------
+  About
+------------------------------------------------------------------------------*/
+
+.about {
+	padding: 4.6875rem 0 4.6875rem 0;
+	overflow: hidden;
+	background-color: #dedede;
+}
+
+.about.background {
+	padding-top: 9.375rem;
+	background: url("../img/section-bg-img.jpg") left top/100% auto no-repeat;
+}
+
+.about h1 {
+	padding: 3.125rem 0;
+	color: #808080;
+}
+
+.about h2 {
+	margin-bottom: 0 !important;
+}
+
+.about h3 {
+	color: #2173bd;
+	margin: 0;
+}
+
+.about .button {
+	margin-top: 6.25rem;
+	margin-bottom: 3.125rem;
+}
+
+.about p a {
+	color: #30aab1;
+}
+
+.about p a:hover {
+	color: #2173bd;
+}
+
+.about ul {
+	text-align: left;
+}
+
+.about--image-stack {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+}
+
+.about--image-stack .image-stack_item--top {
+	grid-column: 1 / span 8;
+	grid-row: 1;
+	z-index: 1;
+}
+
+.about--image-stack .image-stack_item--bottom {
+	grid-column: 5 / -1;
+	grid-row: 1;
+	padding-top: 90%;
+}
+
+.ie-11 .about .row .col-6,
+.ie-11 .about .row .col-5 {
+	max-height: 450px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -5219,6 +5315,18 @@ Utility Nav
 .testimonials-section h4 {
 	font-size: 18px;
 	color: #223246;
+}
+
+.about {
+	padding: 4.6875rem 0 0;
+}
+
+.about.background {
+	padding-top: 4.6875rem;
+}
+
+.about .col-5 {
+	margin-top: 1.875rem;
 }
 
 }

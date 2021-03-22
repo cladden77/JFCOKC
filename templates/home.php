@@ -7,6 +7,5 @@
 
   get_template_part('parts/partials/hero');
   get_template_part('parts/flexible-content');
-  get_template_part('parts/flexible-content/contact');
 
   get_footer();
