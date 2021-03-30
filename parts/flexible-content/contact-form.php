@@ -9,6 +9,7 @@ $content = get_sub_field('contact_form_content');
 ?>
 
 <section class="container contact-form">
+  <a name="contact"></a>
   <div class="row">
     <div class="sm-col-11 col-8 columns col-centered">
       <?php if($header) : ?>

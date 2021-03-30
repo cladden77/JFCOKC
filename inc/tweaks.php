@@ -136,9 +136,9 @@
   ?>
     <style type="text/css">
       body.login div#login h1 a {
-        background-image: url(https://www.malkincreative.com/wp-content/themes/malkincreative/assets/img/logos/logo--primary.svg);
+        background-image: url(http://jfcokc.local/wp-content/uploads/2021/03/logo-primary-dark.svg);
         width: 100%;
-        background-size: 80%;
+        background-size: 100%;
         padding-bottom: 0;
       }
     </style>

@@ -17,6 +17,10 @@
     }
   }
 
+  p {
+    color: $white;
+  }
+
   h3 {
     color: $white;
     font-size: 36px;
@@ -42,6 +46,35 @@
         }
       }
     }
+  }
+
+  &--contact {
+    display: block;
+    text-align: left;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: $white;
+
+      li {
+        color: $white;
+      }
+    }
+
+    img {
+      max-width: rem(25);
+      margin-right: rem(10);
+    }
+
+    a {
+      padding: rem(10) 0;
+    }
+  }
+
+  .google-map {
+    margin: auto;
   }
 
   &--copywright {

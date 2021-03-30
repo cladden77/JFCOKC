@@ -2374,6 +2374,10 @@ Utility Nav
 	cursor: pointer;
 }
 
+.footer p {
+	color: #fff;
+}
+
 .footer h3 {
 	color: #fff;
 	font-size: 36px;
@@ -2395,6 +2399,35 @@ Utility Nav
 
 .footer .footer-nav ul li a:hover {
 	color: #30aab1;
+}
+
+.footer--contact {
+	display: block;
+	text-align: left;
+}
+
+.footer--contact ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+
+.footer--contact ul li {
+	color: #fff;
+}
+
+.footer--contact img {
+	max-width: 1.5625rem;
+	margin-right: 0.625rem;
+}
+
+.footer--contact a {
+	padding: 0.625rem 0;
+}
+
+.footer .google-map {
+	margin: auto;
 }
 
 .footer--copywright {
@@ -5289,7 +5322,7 @@ Utility Nav
 }
 
 .hero {
-	top: 80px;
+	top: 35px;
 	padding: 6.25rem 0 6.25rem;
 }
 
@@ -5301,6 +5334,7 @@ Utility Nav
 	background-image: none !important;
 	background: #30aab1 !important;
 	padding: 15px 0;
+	height: unset;
 }
 
 .testimonials-section h2 {

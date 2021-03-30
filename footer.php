@@ -1,51 +1,66 @@
 <?php // Close main
 
 // variables
+$header = get_field('header');
+$subheader = get_field('subheader');
+$googleMap = get_field('google_map', 'option');
 $bg_img_id = get_field('background_image');
 $bg_img = wp_get_attachment_image_src($bg_img_id, 'full');
 $bg_img_position = get_field('background_position');
-$header = get_field('header');
-$subheader = get_field('subheader');
-$link = get_field('cta_button');
+$footerTagline = get_field('footer_tagline', 'option');
+$phone = get_field('phone_number', 'option');
+$email = get_field('email', 'option');
+$address = get_field('physical_address', 'option');
 
 // Conditional classes
-$sectionClass = $hero_bottom_divider ? ' hero--bottom-divider' : '';
-$rowClass = $background_box_for_text_content ? ' hero--fifty-fifty__row--background' : '';
+
 ?>
 </main>
 
 <footer>
   <section class="container footer">
-    <div class="row row--align-items-center">
+    <div class="row row--align-items-start">
       <div class="col-4 text-left sm-col-12 sm-col-centered">
         <a href="<?php echo home_url(); ?>">
-          <img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo-primary--white.svg" alt="JF consulting" />
+          <img class="footer__logo text-left" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/logo-primary--white.svg" alt="JF consulting" />
         </a>
+        <p class="text-left"><?php echo $footerTagline; ?></p>
+        <div class="text-left">
         <?php // Footer Social Menu
           wp_nav_menu( array('theme_location' => 'social', 'container' => 'nav', 'container_class' => 'menu-social') );
         ?>
-      </div>
-      <div class="col-4 sm-col-12 sm-col-centered">
-        <!-- Footer Content and menu here -->
-        <h3>Contact Us</h3>
-        <div class="text-center stretch">
-          <a href="<?php echo $twitter; ?>" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" alt="JF Consulting Twitter" />
-          </a>
-          <a href="<?php echo $facebook; ?>" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="JF Consulting Facebook" />
-          </a>
-          <a href="<?php echo $instagram; ?>" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Instagram-Icon-v2.svg" alt="JF Consulting Instagram" />
-          </a>
-          <a href="<?php echo $linkedin; ?>" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" alt="JF Consulting LinkedIn" />
-          </a>
         </div>
       </div>
-      <div class="col-4 sm-col-12 sm-col-centered">
-        <!-- Google Map -->
 
+      <div class="col-4 sm-col-12 sm-col-centered text-left">
+        <!-- Footer Content and menu here -->
+        <h3>Contact Us</h3>
+        <div class="text-center stretch footer--contact">
+          <ul>
+            <?php if($phone) : ?>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone.svg" alt="JF Consulting Phone number" />
+            <?php echo $phone; ?></li>
+            <?php endif; ?>
+
+            <?php if($address) : ?>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" alt="JF Consulting Email" />
+            <?php echo $email; ?></li>
+            <?php endif; ?>
+
+            <?php if($address) : ?>
+            <li><p><img src="<?php echo get_template_directory_uri(); ?>/assets/img/location.svg" alt="JF Consulting Mailing Address" />
+            <?php echo $address; ?></p></li>
+            <?php endif; ?>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-4 sm-col-12 sm-col-centered">
+        <div class="google-map">
+        <!-- Google Map -->
+          <?php echo $googleMap; ?>
+        </div>
       </div>
     </div>
   </section>
