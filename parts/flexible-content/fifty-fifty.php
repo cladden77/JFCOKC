@@ -26,7 +26,7 @@ $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
           </div>
         <?php endif; ?>
 
-        <div class="col-6 sm-text-center">
+        <div class="col-6 sm-text-center" data-aos="fade-right" data-aos-delay="400">
           <?php if($content_header) : ?>
             <h3><?php echo $content_header; ?></h3>
           <?php endif;
@@ -34,7 +34,7 @@ $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
           echo $content; ?>
         </div>
 
-        <div class="col-5 sm-col-8 sm-col-centered">
+        <div class="col-5 sm-col-8 sm-col-centered" data-aos="fade-left" data-aos-delay="400">
           <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
         </div>
       </div>

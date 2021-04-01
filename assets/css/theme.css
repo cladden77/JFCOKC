@@ -2355,6 +2355,72 @@ Utility Nav
 	opacity: 1;
 }
 
+.header .sub-menu {
+	display: none;
+}
+
+.header .nifty-panel {
+	top: 85px;
+}
+
+.header .nifty-panel ul {
+	list-style: none;
+}
+
+.header .nifty-panel ul li a {
+	color: #fff;
+	font-size: 22px;
+}
+
+.header .nifty-panel .mobile-nav {
+	width: 100%;
+}
+
+.header .nifty-panel .mobile-nav ul {
+	width: 100%;
+	list-style: none;
+	margin-top: 1.25rem;
+	padding-right: 1.875rem;
+	padding-left: 1.875rem;
+	text-align: left;
+}
+
+.header .nifty-panel .mobile-nav ul li {
+	font-size: 1.875rem;
+}
+
+.header .nifty-panel .mobile-nav ul li a {
+	color: #fff;
+}
+
+.header .nifty-panel .mobile-nav ul li.current-menu-item a {
+	color: #2173bd;
+}
+
+.header .nifty-panel .mobile-nav .menu-item-has-children {
+	position: relative;
+}
+
+.header .nifty-panel .mobile-nav .menu-item-has-children:after {
+	display: block;
+	position: absolute;
+	content: '';
+	background: url("../img/chevron-down.svg") center center/cover no-repeat;
+	width: 40px;
+	height: 30px;
+	top: 3px;
+	right: 310px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.header .nifty-panel .mobile-nav .menu-item-has-children.open:after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
 /*------------------------------------------------------------------------------
   Footer
 ------------------------------------------------------------------------------*/
