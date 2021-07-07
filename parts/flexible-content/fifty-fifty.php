@@ -1,5 +1,6 @@
 <?php
 //vars
+$sectionHeader = get_sub_field('section_header');
 $header = get_sub_field('header');
 $position = get_sub_field('image_position');
 $img_id = get_sub_field('image');
@@ -12,7 +13,7 @@ $btn = get_sub_field('button');
 
 // Conditional classes/styles
 $rowClass = $position == 'left' ? ' row--reverse' : ''; ?>
-
+<a name="<?php echo $sectionHeader; ?>"></a>
 <section class="container fifty-fifty">
   <div class="row row--align-items-center row--align-items-stretch">
     <div class="sm-col-11 col-12 col-centered">

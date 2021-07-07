@@ -1,5 +1,6 @@
 <?php
 //vars
+$sectionHeader = get_sub_field('section_header');
 $header = get_sub_field('header');
 $position = get_sub_field('image_position');
 $img_id = get_sub_field('image_one');
@@ -16,6 +17,7 @@ $content = get_sub_field('content');
  ?>
 
 <section class="container about">
+  <a name="<?php echo $sectionHeader; ?>"></a>
   <div class="row row--align-items-center row--align-items-stretch">
     <div class="sm-col-11 col-12 col-centered">
       <div class="row row--align-items-center">
