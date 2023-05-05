@@ -7,12 +7,11 @@
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
     "ginger-grid": "^2.3.1",
-    "nifty-nav": "^3.0.0",
-    "prelude-wp": "^4.2.5",
+    "nifty-nav": "^2.4.0",
+    "prelude-wp": "^6.3.2",
     "remodal": "^1.1.1",
     "slick-carousel": "^1.8.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
